@@ -1,2 +1,3 @@
 utils.egg-info/
 .cache
+.coverage
