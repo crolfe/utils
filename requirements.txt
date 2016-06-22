@@ -1,7 +1,17 @@
 arrow==0.8.0
+coverage==4.1
+flake8==2.6.0
+mccabe==0.5.0
 ply==3.8
+py==1.4.31
+pycodestyle==2.0.0
+pyflakes==1.2.3
+pytest==2.9.2
+pytest-cov==2.2.1
+pytest-cover==3.0.0
+pytest-coverage==0.0
+pytest-flake8==0.5
 python-dateutil==2.5.3
 six==1.10.0
+-e git+git@github.com:crolfe/utils.git@12dec25539972bfdc9c96264a705d82a43981ea1#egg=utils
 xonsh==0.3.4
-
--e .
