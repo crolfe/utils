@@ -1,0 +1,7 @@
+arrow==0.8.0
+ply==3.8
+python-dateutil==2.5.3
+six==1.10.0
+xonsh==0.3.4
+
+-e .
