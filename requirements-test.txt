@@ -1,0 +1,7 @@
+-r requirements.txt
+
+pytest==2.9.2
+pytest-cov==2.2.1
+pytest-coverage==0.0
+pytest-flake8==0.5
+xonsh==0.3.4
