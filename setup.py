@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 version = __import__('utils').get_version()
 keywords = ''
-long_desc =  ''
+long_desc = ''
 
 needs_pytest = {'pytest', 'test', 'ptr'}.intersection(sys.argv)
 pytest_runner = ['pytest-runner'] if needs_pytest else []
