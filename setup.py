@@ -26,4 +26,4 @@ setup(name='utils',
       keywords=keywords,
       packages=find_packages(),
       setup_requires=['arrow==0.8.0'] + pytest_runner,
-      tests_require=['pytest', 'pytest-flake8', 'pytest-cov'])
+      tests_require=['pytest>=2.8', 'pytest-flake8', 'pytest-cov'])
