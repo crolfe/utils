@@ -1,8 +1,13 @@
+import sys
+
 from setuptools import setup, find_packages
 
 version = __import__('utils').get_version()
 keywords = ''
 long_desc =  ''
+
+needs_pytest = {'pytest', 'test', 'ptr'}.intersection(sys.argv)
+pytest_runner = ['pytest-runner'] if needs_pytest else []
 
 setup(name='utils',
       version=version,
@@ -17,7 +22,8 @@ setup(name='utils',
           'Programming Language :: Python :: 2',
           'Programming Language :: Python :: 3',
       ],
+      entry_points={},
       keywords=keywords,
       packages=find_packages(),
-      install_requires=['arrow==0.8'],
-      package_data={'': ['*.json', '*.gz']})
+      setup_requires=['arrow==0.8.0'] + pytest_runner,
+      tests_require=['pytest', 'pytest-flake8', 'pytest-cov'])
