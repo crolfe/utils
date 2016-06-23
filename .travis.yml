@@ -9,4 +9,6 @@ python:
 env:
   - PIP_USE_MIRRORS=true
 # # command to run tests
+before_install:
+ - "pip install -U pytest"
 script: "python setup.py pytest"
